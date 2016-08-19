@@ -1,0 +1,10 @@
+version: '2'
+
+services:  
+  npm:
+    build: .
+    environment:
+      NODE_WORKDIR: /home/node
+    volumes:
+      - ./:/home/node
+      - ./node_modules:/home/node/node_modules
